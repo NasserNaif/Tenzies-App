@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: #0b2434;
+  padding: 60px;
+  margin: 0;
+}
+
+main {
+  text-align: center;
+  margin: auto;
+  /* backdrop-filter: blur(10px); */
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 420px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+main > h1 {
+  margin-bottom: -18px;
+}
+
+.DiceContainer {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+}
+
+.Dice {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Dice:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.BTNroll {
+  background-color: #5800ff;
+  height: 60px;
+  width: 100px;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.BTNroll:active {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
